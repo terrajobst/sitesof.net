@@ -1,0 +1,66 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+:root {
+    --dotnet-purple: #512bd4;
+    --dotnet-purple-hover: #4411BB;
+    --dotnet-purple-border-hover: #3311BB;
+}
+
+.bg-dotnet {
+    background-color: var(--dotnet-purple) !important;
+}
+
+.btn-dotnet {
+    color: #fff;
+    background-color: var(--dotnet-purple);
+    border-color: var(--dotnet-purple);
+}
+
+    .btn-dotnet:hover {
+        color: #fff;
+        background-color: var(--dotnet-purple-hover);
+        border-color: var(--dotnet-purple-border-hover);
+    }
+
+html, body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.site {
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+    width: 14em;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+    .site:hover {
+        box-shadow: 0 1rem 3rem rgba(81,43,212,1.0);
+    }
+
+.site img {
+    width: 190px;
+    height: 190px;
+    filter: grayscale(100%);
+}
+
+    .site:hover img {
+        filter: unset;
+    }
+
+@media (prefers-color-scheme: dark) {
+    .site {
+        box-shadow: 0 1rem 3rem rgba(255,255,255,.11);
+    }
+}
+
+/* Dropdown */
+
+.dropdown-toggle:focus ~ .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu:hover {
+    display: block;
+}
