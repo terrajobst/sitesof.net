@@ -26,33 +26,80 @@ html, body {
     font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/*
+    Extra small devices (phones portrait mode)
+*/
+
 .site {
-    margin-left: 3.5em;
-    margin-right: 3.5em;
-    margin-top: 2.0em;
-    margin-bottom: 2.0em;
-    width: 14em;
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
-
-    .site:hover {
-        box-shadow: 0 1rem 3rem rgba(81,43,212,1.0);
-    }
-
+ 
 .site img {
-    width: 190px;
-    height: 190px;
-    filter: grayscale(100%);
+    width: 65px;
+    height: 65px;
 }
 
-    .site:hover img {
-        filter: unset;
+.card-body {
+    padding-top: 0px;
+}
+
+/*
+    Small devices (phone landscape)
+*/
+
+@media (min-width: 576px) { 
+    .site {
+        width: 14em;
+    }    
+}
+
+/*
+    large devices
+*/
+
+
+@media (min-width: 992px) { 
+    .site {
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+        margin-top: 2.0em;
+        margin-bottom: 2.0em;
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    }    
+
+    .site img {
+        width: 190px;
+        height: 190px;
+    }    
+
+    .card-body {
+        padding-top: 1.25rem;
     }
+}
 
 @media (prefers-color-scheme: dark) {
     .site {
         box-shadow: 0 1rem 3rem rgba(255,255,255,.11);
     }
+
+}
+
+@media (hover) {
+ 
+    .site:hover {
+        box-shadow: 0 1rem 3rem rgba(81,43,212,1.0);
+    }
+
+    .site img {
+        filter: grayscale(100%);
+    }
+    
+        .site:hover img {
+            filter: unset;
+        }    
 }
 
 /* Dropdown */
