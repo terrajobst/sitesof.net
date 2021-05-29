@@ -30,6 +30,12 @@ html, body {
     Extra small devices (phones portrait mode)
 */
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 .site {
     margin-left: 1.0em;
     margin-right: 1.0em;
@@ -50,16 +56,20 @@ html, body {
     Small devices (phone landscape)
 */
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {    
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .site {
         width: 14em;
-    }    
+    }
 }
 
 /*
     large devices
 */
-
 
 @media (min-width: 992px) { 
     .site {
